@@ -18,7 +18,7 @@
 
 project = 'gorella_base'
 copyright = '2020, G0RELLA'
-author = 'Peer Herholz, Jose Alanis, Christoph Vogelbacher'
+author = 'Peer Herholz, José C. García Alanis, Christoph Vogelbacher'
 
 # -- General configuration ---------------------------------------------------
 
