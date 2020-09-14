@@ -1,0 +1,3 @@
+  	[build]
+	  publish = "lecture/_build/html"
+	  command = "cd lecture && pip install -r requirements.txt && make html"
