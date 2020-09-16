@@ -16,6 +16,7 @@ results_communication.md
 symposium.md
 projects.md
 questionnaires.md
+CoC.md
 ```
 
 ## "What's all this now?"
