@@ -54,4 +54,5 @@ When necessary, an organizer will assist students to file a report at the approp
 Also, if you need moral support, feel welcome to ping the organizers in person or by email.
 
 
-## Thanks and credits go the [Montreal Brainhack School]() for providing the CoC, this CoC is based on. 
+## Attribution
+Thanks and credits go the [Montreal Brainhack School]() for providing the CoC, this CoC is based on. 
