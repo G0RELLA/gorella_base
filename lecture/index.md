@@ -1,4 +1,4 @@
-# Generalized Outline of Realistic Empirical research Lectures in Life Science and their Applications 
+# Generalizable Outline of Realistic Empirical research Lectures in Life Science and their Applications 
 
 ```{toctree}
 ---
