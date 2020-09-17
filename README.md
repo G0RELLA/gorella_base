@@ -2,7 +2,7 @@
 
 ## "What's in this repository?"
 
-This repository contains the basic skeleton for G0RELLA.
+This repository contains the basic skeleton for G0RELLA lectures.
 
 We've tried to document the various aspects of G0RELLA with a whole bunch of README files, so feel free to jump around and check things out.
 
