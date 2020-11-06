@@ -20,6 +20,8 @@ project = 'gorella_base'
 copyright = '2020, G0RELLA'
 author = 'Peer Herholz, José C. García Alanis, Christoph Vogelbacher'
 
+master_doc = "index"
+
 # -- General configuration ---------------------------------------------------
 
 # Add any Sphinx extension module names here, as strings. They can be
@@ -27,36 +29,75 @@ author = 'Peer Herholz, José C. García Alanis, Christoph Vogelbacher'
 # ones.
 extensions = [
     "myst_nb",
-    "sphinx.ext.autosectionlabel"
+    "sphinx_togglebutton",
+    "sphinx_copybutton",
+    "sphinx.ext.intersphinx",
+    "sphinx.ext.autodoc",
+    "sphinx.ext.viewcode",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates']
+templates_path = ["_templates"]
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = ["_build", "Thumbs.db", ".DS_Store", "**.ipynb_checkpoints"]
 
-# Prefix document path to section labels, to use `path/to/file:heading`
-# instead of just `heading`
-autosectionlabel_prefix_document = True
 
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-
-html_theme = 'sphinx_book_theme'
-html_title = "Gorella-Base"
-html_logo = "_static/"
+#
+html_title = ""
+html_theme = "sphinx_book_theme"
+html_logo = "_static/gorella_logo.png"
 html_theme_options = {
-    "show_prev_next": True,
-    "search_bar_text": "Search the walkthrough ..."
+    "github_url": "https://github.com/G0RELLA/gorella_base",
+    "repository_url": "https://github.com/G0RELLA/gorella_base",
+    "repository_branch": "master",
+    "use_edit_page_button": True,
+    "path_to_docs": "docs/",
+    "expand_sections": ["use/index", "examples/index"],
 }
-html_context = {
-    "github_user": "G0RELLA",
-    "github_repo": "gorella_base",
-    "github_version": "master",
-    "doc_path": "./walkthrough",
+
+intersphinx_mapping = {
+    "python": ("https://docs.python.org/3.8", None),
+    "jb": ("https://jupyterbook.org/", None),
+    "myst": ("https://myst-parser.readthedocs.io/en/latest/", None),
+    "markdown_it": ("https://markdown-it-py.readthedocs.io/en/latest", None),
+    "nbclient": ("https://nbclient.readthedocs.io/en/latest", None),
+    "nbformat": ("https://nbformat.readthedocs.io/en/latest", None),
+    "sphinx": ("https://www.sphinx-doc.org/en/3.x", None),
 }
+
+intersphinx_cache_limit = 5
+
+nitpick_ignore = [
+    ("py:class", "docutils.nodes.document"),
+    ("py:class", "docutils.nodes.Node"),
+    ("py:class", "docutils.nodes.container"),
+    ("py:class", "docutils.nodes.system_message"),
+    ("py:class", "nbformat.notebooknode.NotebookNode"),
+    ("py:class", "pygments.lexer.RegexLexer"),
+]
+
+# Add any paths that contain custom static files (such as style sheets) here,
+# relative to this directory. They are copied after the builtin static files,
+# so a file named "default.css" will overwrite the builtin "default.css".
+html_static_path = ["static"]
+
+copybutton_selector = "div:not(.output) > div.highlight pre"
+
+nb_custom_formats = {".Rmd": ["jupytext.reads", {"fmt": "Rmd"}]}
+jupyter_execute_notebooks = "cache"
+execution_show_tb = "READTHEDOCS" in os.environ
+execution_timeout = 60  # Note: 30 was timing out on RTD
+
+myst_admonition_enable = True
+myst_amsmath_enable = True
+myst_html_img_enable = True
+myst_deflist_enable = True
+myst_url_schemes = ("http", "https", "mailto")
+panels_add_boostrap_css = False
