@@ -2,7 +2,7 @@
 .DS_Store
 
 # PyCharm
-.idea/**
+.idea/
 
 # build
 lecture/_build/*
