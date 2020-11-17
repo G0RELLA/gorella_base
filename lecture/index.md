@@ -23,19 +23,18 @@ For more information on the GORELLA project see
 [here](https://g0rella.github.io/gorella_overview/).
 
 Within these pages, we provide the basic elements needed to implement the
-GORELLA framework on your project.
+GORELLA framework on your lecture.
 
 ## What's all this now?
 
 GORELLA stands for "Generalizable Outline for Realistic Empirical Life
 Science Lectures and their Applications". It is a framework aimed to
-improve openness and sustainability in scientific teaching/training,
-and thus ultimately increase the success rate of projects.
-GORELLA is designed to help you prepare and supply project content
+improve openness and sustainability in scientific teaching and training.
+GORELLA is designed to help you prepare and supply lecture content
 in a way that it is [FAIR](https://en.wikipedia.org/wiki/FAIR_data) for as
 many people as possible.
 
-You can use the following sections to organize the content of your project:
+You can use the following sections to organize the content of your lecture:
 
 * [GORELLA - an overview](https://g0rella.github.io/gorella_base/overview.html)
 
@@ -87,7 +86,7 @@ You can use the following sections to organize the content of your project:
 ## I've got a question!
 
 In case you have any questions or difficulties applying the GORELLA framework
-to your project, please don’t hesitate a single second to get in touch with
+to your lecture, please don’t hesitate a single second to get in touch with
 us. A great way to do this is to
 [open an issue](https://github.com/G0RELLA/gorella_base/issues) on the
 GitHub site of the GORELLA base skeleton.
