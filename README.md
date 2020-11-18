@@ -1,4 +1,5 @@
-# G0RELLA - Base
+![logo](lecture/static/gorella_logo.png)
+
 
 ## "What's in this repository?"
 
